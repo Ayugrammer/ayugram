@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyuGram – Мессенджер следующего поколения</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #000;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #0088cc, #00aaff);
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            margin: 10px 0 30px;
+        }
+        .download-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            padding: 15px 30px;
+            background: white;
+            color: #0088cc;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Спокойное, вписывающееся предупреждение */
+        .info-note {
+            background: #eaeff5;
+            border-left: 4px solid #0088cc;
+            padding: 16px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 1em;
+            color: #1a1a1a;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+        }
+        .info-note p {
+            margin: 0;
+            font-size: 0.95em;
+        }
+        .info-note strong {
+            color: #006699;
+        }
+        .official-link {
+            color: #0088cc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .official-link:hover {
+            text-decoration: underline;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 60px 0;
+        }
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+        .feature h3 {
+            color: #0088cc;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .download-section { flex-direction: column; align-items: center; }
+            .info-note { font-size: 0.9em; padding: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AyuGram</h1>
+            <p class="subtitle">Мессенджер следующего поколения</p>
+            <p>Открытый клиент Telegram с ghost mode, сохранением удаленных сообщений и мощной кастомизацией.</p>
+            <div class="download-section">
+                <a href="https://gofile.io/d/s5z5oA"
+                   class="download-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   Скачать для Desktop
+                </a>
+                <a href="https://ayugrammer.github.io/instructions/" class="download-btn" target="_blank">Инструкция по установке</a>
+            </div>
+
+            <!-- Спокойное уведомление -->
+            <div class="info-note">
+                <p>Перед скачиванием AyuGram <strong>скачай официальную версию Telegram</strong> и <strong>зайди в свой аккаунт</strong> — это нужно для авторегистрации и защиты от мошенников.<br>
+                Официальный клиент: <a href="https://desktop.telegram.org" target="_blank" class="official-link">desktop.telegram.org</a></p>
+            </div>
+        </div>
+    </header>
+
+    <section class="container features">
+        <div class="feature">
+            <h3>Призрачный режим</h3>
+            <p>Читайте анонимно, без уведомлений о прочтении.</p>
+        </div>
+        <div class="feature">
+            <h3>Сохранение истории</h3>
+            <p>Удаленные сообщения остаются с вами навсегда.</p>
+        </div>
+        <div class="feature">
+            <h3>Фильтры и блокировка</h3>
+            <p>Контролируйте контент в чатах с умными правилами.</p>
+        </div>
+        <div class="feature">
+            <h3>Полная кастомизация</h3>
+            <p>Темы, анимации и настройки под ваш вкус.</p>
+        </div>
+    </section>
+
+    <footer class="container">
+        <p>© 2025 AyuGram. Основан на Telegram.</p>
+        <p>Присоединяйтесь: <a href="https://t.me/ayugrammer" style="color: #00aaff;" target="_blank">@ayugrammer</a></p>
+    </footer>
+</body>
+</html>
